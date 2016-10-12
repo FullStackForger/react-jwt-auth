@@ -8,7 +8,7 @@ const assert = chai.assert
 describe('react-jwt-auth', () => {
 
   it('should exist', () => {
-    expect(app).to.exist
+    expect(jwtAuth).to.exist
   })
 
 
@@ -30,11 +30,7 @@ describe('react-jwt-auth', () => {
     })
   })
 
-  describe('api', () => {
-
-    it('should expose init', () => {
-      assert.isFunction(jwtAuth.init)
-    })
+  describe('api methods', () => {
 
     it('should expose isAuthenticated', () => {
       assert.isFunction(jwtAuth.isAuthenticated)

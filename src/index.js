@@ -7,15 +7,13 @@ export { Facebook }
 import Google from './components/google'
 export { Google }
 
-import config from './internals/config'
-
 import Auth from './components/auth'
 export {Auth}
 
 export default {
-	init: config.init,
 	Auth,
 	Facebook,
+	Google,
 	isAuthenticated,
 	login,
 	logout,
