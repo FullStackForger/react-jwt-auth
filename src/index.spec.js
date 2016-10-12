@@ -3,6 +3,7 @@ import jwtAuth from './index'
 import {Auth, Google, Facebook} from './index'
 
 const expect = chai.expect
+const assert = chai.assert
 
 describe('react-jwt-auth', () => {
 
