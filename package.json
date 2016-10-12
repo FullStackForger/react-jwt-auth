@@ -4,7 +4,7 @@
   "description": "JSON Web Token authentication and authorization component for React",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register ./src/**/*.spec.js"
+    "test": "mocha --compilers js:babel-core/register --require ./tests/setup.js ./src/**/*.spec.js"
   },
   "keywords": [
     "react",
