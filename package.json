@@ -1,5 +1,5 @@
 {
-  "name": "reactivator",
+  "name": "react-jwt-auth",
   "version": "0.2.0",
   "description": "JSON Web Token authentication and authorization component for React",
   "main": "index.js",
