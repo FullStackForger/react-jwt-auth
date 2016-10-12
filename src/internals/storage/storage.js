@@ -11,7 +11,7 @@ export default class Storage {
 }
 
 Storage.defaults = {
-	storage: localStorage, // localStorage, sessionStorage or custom conforming to storage API
+	storage: window.localStorage || null, // localStorage, sessionStorage or custom conforming to storage API
 }
 
 Storage.create = (opts) => (new Storage(opts))
