@@ -35,15 +35,3 @@ render () {
 	)
 }
 ```
-
-## Endpoints
-
-### Default configuration
-
-* `auth/login`
-* `auth/signup`
-* `auth/refresh`
-
-* `auth/{provider}`
-	* provider: `facebook`
-	* provider: `google`
