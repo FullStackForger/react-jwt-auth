@@ -2,7 +2,8 @@
 
 ## Initial setup
 
-Before you start using React JWT Auth module you need to configure `baseUrl` pointing to the right REST URL server.
+Before you start using *React JWT Auth* module you need point it to your REST URL server.
+You can do it passing `baseUrl` param into `Auth` component.
 
 ```
 <Auth baseUrl="http://localhost:8080/api/" />
@@ -10,7 +11,7 @@ Before you start using React JWT Auth module you need to configure `baseUrl` poi
 
 ### Wrapping all components
 
-Easiest method is to wrap your component with Auth component.
+Easiest method is to wrap your custom components with Auth component.
 
 ```
 ReactDOM.render(
@@ -23,7 +24,7 @@ ReactDOM.render(
 
 ### Wrapping individual components
 
-Alternatively you can just wrap components that require authentication.
+Alternatively you can wrap only components which require authentication.
 
 ```
 ReactDOM.render(
@@ -40,7 +41,7 @@ ReactDOM.render(
 
 ### No wrapping
 
-Primary role of `Auth` component is setting up initial configuration, therefore if you don't want to wrap.
+Primary role of `Auth` component is setting up initial configuration, therefore you don't have to wrap.
 Below code will also work.
 
 ```
@@ -80,4 +81,3 @@ ReactDOM.render(
 	document.getElementById('app')
 )
 ```
-
