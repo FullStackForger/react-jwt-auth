@@ -12,9 +12,9 @@ As there is no need to reinvent the wheel, some of Satellizer code has been reus
 Before you start using component you should configure it, eg:
 ```
 ReactDOM.render(
-		<Auth baseUrl="http://localhost:8080/api/">
-			<YourAwesomeComponents />
-		</Auth>	
+	<Auth baseUrl="http://localhost:8080/api/">
+		<YourAwesomeComponents />
+	</Auth>,
 	document.getElementById('app')
 );
 ```
