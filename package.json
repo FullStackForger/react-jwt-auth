@@ -1,6 +1,6 @@
 {
   "name": "react-jwt-auth",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "JSON Web Token authentication and authorization component for React",
   "files": [
     "lib",
