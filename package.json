@@ -2,9 +2,10 @@
   "name": "react-jwt-auth",
   "version": "0.2.1",
   "description": "JSON Web Token authentication and authorization component for React",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./tests/setup.js ./src/**/*.spec.js"
+    "test": "mocha --compilers js:babel-core/register --require ./internals/test.setup.js ./src/**/*.spec.js",
+    "release": "webpack --verbose --colors --display-error-details --config ./internals/webpack.release.js"
   },
   "keywords": [
     "react",
