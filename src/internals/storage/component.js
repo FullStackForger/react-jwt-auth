@@ -11,7 +11,7 @@
 import React, { PropTypes } from 'react'
 import Storage from './storage'
 
-export default class Storage extends React.Component {
+export default class StorageComponent extends React.Component {
 	constructor(props) {
 		super(props)
 	}
