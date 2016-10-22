@@ -13,6 +13,6 @@ export default class Auth extends Component {
 		preventBadFacebookHash()
 	}
 	render() {
-		return this.props.children
+		return this.props.children || null
 	}
 }
