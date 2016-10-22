@@ -19,7 +19,8 @@
     "build-cjs": "rimraf lib && cross-env set BABEL_ENV=cjs && babel ./src -d lib/cjs --ignore **/*.spec.*",
     "build-es": "rimraf es6 && cross-env BABEL_ENV=es babel ./src -d lib/es6 --ignore **/*.spec.*",
     "prepublish": "npm test && npm run build",
-    "preversion": "npm test"
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "react",
