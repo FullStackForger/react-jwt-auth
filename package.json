@@ -48,8 +48,6 @@
     "react-addons-test-utils": "^15.3.2",
     "react-hot-loader": "^3.0.0-beta.5",
     "react-router": "^2.8.1",
-    "rimraf": "^2.5.4",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.2"
+    "rimraf": "^2.5.4"
   }
 }
