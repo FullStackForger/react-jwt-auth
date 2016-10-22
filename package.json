@@ -17,7 +17,8 @@
     "test": "mocha --compilers js:babel-core/register --require ./internals/test.setup.js ./src/**/*.spec.js",
     "build": "npm run build-cjs && npm run build-es",
     "build-cjs": "rimraf lib && cross-env set BABEL_ENV=cjs && babel ./src -d lib/cjs --ignore **/*.spec.js",
-    "build-es": "rimraf es6 && cross-env BABEL_ENV=es babel ./src -d lib/es6 --ignore **/*.spec.js"
+    "build-es": "rimraf es6 && cross-env BABEL_ENV=es babel ./src -d lib/es6 --ignore **/*.spec.js",
+    "prepublish": "npm test && npm run build"
   },
   "keywords": [
     "react",
