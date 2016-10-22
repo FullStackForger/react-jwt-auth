@@ -1,16 +1,14 @@
-import chai from 'chai'
 import jwtAuth from './index'
-
-const expect = chai.expect
-const assert = chai.assert
+import { expect } from 'chai'
 
 describe('storage', () => {
-
-	before(() => {
-		delete require.cache[require.resolve('./storage.js')]
-	})
+	let Storage
 
 	describe('on the client', () => {
+		before(() => {
+			delete require.cache[require.resolve('./storage.js')]
+			Storage = require('./storage').default
+		})
 		runSuite()
 	})
 
@@ -20,6 +18,8 @@ describe('storage', () => {
 		before(() => {
 			windowBckp = global.window
 			delete global.window
+			delete require.cache[require.resolve('./storage.js')]
+			Storage = require('./storage').default
 		})
 
 		after(() => {
@@ -30,7 +30,6 @@ describe('storage', () => {
 	})
 
 	function runSuite () {
-		const Storage = require('./storage').default
 
 		it('is accessible', () => {
 			expect(Storage).to.exist
