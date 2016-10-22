@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import OAuth2 from './oauth2'
+import { isClient } from '../internals/utils'
 
 const defaultProps = {
 	clientId: null,
@@ -8,7 +9,7 @@ const defaultProps = {
 	tokenEndpoint: '/auth/facebook',
 	oauthProvider: 'facebook',
 	oauthEndpoint: 'https://www.facebook.com/v2.5/dialog/oauth',
-	redirectUri: window.location.origin + '/', // FB requires be followed by trailing slash for FB
+	redirectUri: isClient() ? window.location.origin + '/' : undefined, // FB requires be followed by trailing slash for FB
 	requiredUrlParams: ['display', 'scope'],
 	scope: ['email'],
 	scopeDelimiter: ',',
