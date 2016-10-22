@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 
 import storage from '../internals/storage'
-import PopupButton from './popup-button'
+import PopupButton from './PopupButton'
 import { exchangeCodeForToken } from '../local'
 
 const propTypes = {
