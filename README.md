@@ -1,7 +1,7 @@
 # React JWT Auth
 
-JSON Web Token authentication and authorization library for react.
----
+### Token based authentication for react.
+
 [![Build Status](https://travis-ci.org/fullstackforger/react-jwt-auth.svg?branch=master)](https://travis-ci.org/fullstackforger/react-jwt-auth)
 
 ## Inspiration
