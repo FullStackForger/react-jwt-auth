@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import OAuth2 from './oauth2'
+import OAuth2 from './OAuth2'
 import { isClient } from '../internals/utils'
 
 const defaultProps = {
