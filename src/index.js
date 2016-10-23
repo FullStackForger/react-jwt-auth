@@ -2,12 +2,12 @@ import { isAuthenticated, getToken, setToken, getAuthHeader } from './shared'
 import { login, logout, signup, refreshToken } from './local'
 import { getProfile, updateProfile } from './user'
 
-import Facebook from './components/facebook'
+import Facebook from './components/Facebook'
 export { Facebook }
-import Google from './components/google'
+import Google from './components/Google'
 export { Google }
 
-import Auth from './components/auth'
+import Auth from './components/Auth'
 export {Auth}
 
 export default {
