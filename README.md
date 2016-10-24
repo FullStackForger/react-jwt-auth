@@ -3,14 +3,13 @@
 ### Token based authentication for react.
 
 [![Build Status](https://travis-ci.org/fullstackforger/react-jwt-auth.svg?branch=master)](https://travis-ci.org/fullstackforger/react-jwt-auth)
-[![dependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth)
-[![devDependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/dev-status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth?type=dev)
-[![peerDependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/peer-status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth?type=peer)
 [![Coverage Status](https://coveralls.io/repos/github/fullstackforger/react-jwt-auth/badge.svg?branch=master)](https://coveralls.io/github/fullstackforger/react-jwt-auth?branch=master)
 [![Code Climate](https://codeclimate.com/github/fullstackforger/react-jwt-auth/badges/gpa.svg)](https://codeclimate.com/github/fullstackforger/react-jwt-auth)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4d2136784d334d7f8f4178c7b979d9f2)](https://www.codacy.com/app/fullstackforger/react-jwt-auth?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fullstackforger/react-jwt-auth&amp;utm_campaign=Badge_Grade)
-[![npm](https://img.shields.io/npm/v/react-jwt-auth.svg)](https://www.npmjs.com/package/react-jwt-auth)
-
+[![npm](https://img.shields.io/npm/v/react-jwt-auth.svg)](https://www.npmjs.com/package/react-jwt-auth)  
+[![dependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth)
+[![devDependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/dev-status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth?type=dev)
+[![peerDependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/peer-status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth?type=peer)
 ## Inspiration
 
 Satellizer, for its simplicity, clear code and maturity was initial source of inspiration. 
