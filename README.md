@@ -40,3 +40,9 @@ render () {
 	)
 }
 ```
+
+## Under the hood
+
+### Testing
+
+We use [nyc](https://www.npmjs.com/package/nyc) and [here](http://stackoverflow.com/a/33725069/6096446) is why.
