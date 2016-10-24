@@ -1,6 +1,6 @@
 {
   "name": "react-jwt-auth",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "JSON Web Token authentication and authorization component for React",
   "repository": {
     "type": "git",
