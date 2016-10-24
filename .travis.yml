@@ -1,8 +1,7 @@
 language: node_js
 node_js:
-  - "4.4.1"
-script: npm test
-before_install:
- - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
+  - "5"
+script:
+  - npm test
 after_success:
-- npm run test:coveralls
+ - npm run test:coveralls
