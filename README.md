@@ -10,6 +10,9 @@
 [![dependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth)
 [![devDependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/dev-status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth?type=dev)
 [![peerDependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/peer-status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth?type=peer)
+
+> **Work in progress. Contributions are welcomed!**
+
 ## Inspiration
 
 Satellizer, for its simplicity, clear code and maturity was initial source of inspiration. 
