@@ -1,7 +1,7 @@
 import jwtAuth from './index'
 import { expect } from 'chai'
 
-describe('storage', () => {
+describe('Storage', () => {
 	let Storage
 
 	describe('on the client', () => {
@@ -30,10 +30,6 @@ describe('storage', () => {
 	})
 
 	function runSuite () {
-
-		it('is accessible', () => {
-			expect(Storage).to.exist
-		})
 
 		it('is a constructor method', () => {
 			const storage = new Storage()
