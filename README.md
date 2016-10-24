@@ -50,16 +50,17 @@ npm test
 
 ### Test coverage
 
-We run test coverage with [nyc](https://www.npmjs.com/package/nyc).
-> [here](http://stackoverflow.com/a/33725069/6096446) is why.
-You can run test coverage locally with:
+We run test coverage with [nyc](https://www.npmjs.com/package/nyc) and [here][nyc-why] is why.
+[nyc-why]: http://stackoverflow.com/a/33725069/6096446)
+
+You can run test coverage task locally with:
 ```
 npm run test:coverage
 ```
-It will execute following tasks:
-* run tests
+It will:
+* run all tests
 * generate coverage data
-* generating `./coverage` files with `lcov` reported
+* create coverage report files in `./coverage` folder
 * check minimum coverage requirements set to 95%
 
 Additionally we use [coveralls.io](https://coveralls.io/) for coverage badge generation.
