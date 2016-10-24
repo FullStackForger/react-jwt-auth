@@ -4,8 +4,10 @@
 
 [![Build Status](https://travis-ci.org/fullstackforger/react-jwt-auth.svg?branch=master)](https://travis-ci.org/fullstackforger/react-jwt-auth)
 [![Coverage Status](https://coveralls.io/repos/github/fullstackforger/react-jwt-auth/badge.svg?branch=master)](https://coveralls.io/github/fullstackforger/react-jwt-auth?branch=master)
+[![dependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth)
+[![devDependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/dev-status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth?type=dev)
+[![peerDependencies Status](https://david-dm.org/fullstackforger/react-jwt-auth/peer-status.svg)](https://david-dm.org/fullstackforger/react-jwt-auth?type=peer)
 [![npm](https://img.shields.io/npm/v/react-jwt-auth.svg)](https://www.npmjs.com/package/react-jwt-auth)
-[![npm](https://img.shields.io/npm/l/react-jwt-auth.svg)]()
 
 ## Inspiration
 
