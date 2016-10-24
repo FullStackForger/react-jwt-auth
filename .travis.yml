@@ -5,4 +5,4 @@ script: npm test
 before_install:
  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 after_success:
-- npm run coveralls
+- npm run test:coveralls

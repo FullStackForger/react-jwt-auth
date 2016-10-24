@@ -24,7 +24,7 @@
     "prepublish": "npm test && npm run build",
     "preversion": "npm test",
     "postversion": "git push && git push --tags",
-    "test": "npm run test-mocha",
+    "test": "npm run test:mocha",
     "test:clean": "rimraf coverage .nyc_output",
     "test:mocha": "mocha ./internals/test.setup.js ./src/**/*.spec.js ./src/**/*.spec.jsx --require babel-core/register",
     "test:watch": "npm run test:mocha -- --watch --reporter=min",
@@ -32,7 +32,7 @@
     "test:cover:check": "nyc check-coverage --lines 95 --functions 95 --branches 95",
     "test:cover:report": "nyc report --reporter=lcov",
     "test:coverage": "npm run test:cover && npm run test:cover:report && npm run test:cover:check",
-    "test:coveralls": "npm run test-cover && nyc report --reporter=text-lcov | coveralls"
+    "test:coveralls": "npm run test:cover && nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
     "react",
