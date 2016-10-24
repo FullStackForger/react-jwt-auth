@@ -41,8 +41,26 @@ render () {
 }
 ```
 
-## Under the hood
+## Testing
 
-### Testing
+You can run all tests with:
+```
+npm test
+```
 
-We use [nyc](https://www.npmjs.com/package/nyc) and [here](http://stackoverflow.com/a/33725069/6096446) is why.
+### Test coverage
+
+We run test coverage with [nyc](https://www.npmjs.com/package/nyc).
+> [here](http://stackoverflow.com/a/33725069/6096446) is why.
+You can run test coverage locally with:
+```
+npm run test:coverage
+```
+It will execute following tasks:
+* run tests
+* generate coverage data
+* generating `./coverage` files with `lcov` reported
+* check minimum coverage requirements set to 95%
+
+Additionally we use [coveralls.io](https://coveralls.io/) for coverage badge generation.
+[![Coverage Status](https://coveralls.io/repos/github/fullstackforger/react-jwt-auth/badge.svg?branch=master)](https://coveralls.io/github/fullstackforger/react-jwt-auth?branch=master)
