@@ -53,5 +53,15 @@ describe('Storage', () => {
 			})
 		})
 
+		describe('remove()', () => {
+			it('should removed stored value', () => {
+				const storage = new Storage()
+				storage.set('foo', 'bar')
+				storage.remove('foo')
+				const foo = storage.get('foo')
+				expect(foo).to.equal(undefined)
+			})
+		})
+
 	}
 })
