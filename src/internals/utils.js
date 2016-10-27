@@ -41,14 +41,6 @@ export const isDefined = (value) => {
 	return value !== undefined && value !== null
 }
 
-export const isClient = () => {
-	return typeof window !== 'undefined' && typeof window.document !== 'undefined'
-}
-
-export const isServer = () => {
-	return !isClient()
-}
-
 export const parseQueryString = (str) => {
 	let obj = {};
 	let key;

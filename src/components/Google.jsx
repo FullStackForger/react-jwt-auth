@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import OAuth2 from './OAuth2'
+import env from 'enverse'
 import { isClient } from '../internals/utils'
 
 const defaultProps = {
@@ -9,7 +10,7 @@ const defaultProps = {
 	tokenEndpoint: '/auth/google',
 	oauthProvider: 'google',
 	oauthEndpoint: 'https://accounts.google.com/o/oauth2/auth',
-	redirectUri: isClient() ? window.location.origin : undefined,
+	redirectUri: env.is.browser ? window.location.origin : undefined,
 	requiredUrlParams: ['scope'],
 	optionalUrlParams: ['display', 'state'],
 	scope: ['profile', 'email'],
