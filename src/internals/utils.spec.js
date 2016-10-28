@@ -53,31 +53,30 @@ describe('utils', () => {
 
 	describe('isDefined()', () => {
 		it('should return false for undefined', () => {
-			throw new Error('not implemented yet')
+			expect(isDefined(undefined)).to.be.false
 		})
 
 		it('should return false for null', () => {
-			throw new Error('not implemented yet')
+			expect(isDefined(null)).to.be.false
 		})
 
-		it('should return true for 0', () => {
-			throw new Error('not implemented yet')
-		})
-
-		it('should return true for false', () => {
-			throw new Error('not implemented yet')
+		it('should return true for boolean', () => {
+			expect(isDefined(false)).to.be.true
+			expect(isDefined(true)).to.be.true
 		})
 
 		it('should return true for object', () => {
-			throw new Error('not implemented yet')
+			expect(isDefined({})).to.be.true
 		})
 
 		it('should return true for string', () => {
-			throw new Error('not implemented yet')
+			expect(isDefined('')).to.be.true
 		})
 
 		it('should return true for number', () => {
-			throw new Error('not implemented yet')
+			expect(isDefined(-1)).to.be.true
+			expect(isDefined(0)).to.be.true
+			expect(isDefined(123.123)).to.be.true
 		})
 	})
 
