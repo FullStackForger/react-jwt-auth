@@ -1,6 +1,6 @@
 {
   "name": "react-jwt-auth",
-  "version": "0.5.12",
+  "version": "0.6.0",
   "devEngines": {
     "node": "4.x || 5.x || 6.x",
     "npm": "2.x || 3.x"
