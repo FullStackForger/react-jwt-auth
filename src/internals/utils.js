@@ -69,7 +69,7 @@ export const parseQueryString = (str) => {
 // HotFix: Facebook redirects back with '_=_' hash which breaks the app
 export const preventBadFacebookHash = () => {
 	const fbHashAppendix = /_=_/
-	if (enverse.is.browser && enverse.has.window) {
+	if (enverse.has.window) {
 		if (fbHashAppendix.test(window.location.hash)) {
 			window.location.hash = window.location.hash.replace(fbHashAppendix, '')
 		}

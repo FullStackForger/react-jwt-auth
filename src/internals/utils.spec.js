@@ -96,8 +96,11 @@ describe('utils', () => {
 	})
 
 	describe('should preventBadFacebookHash()', () => {
-		it('should redirect removing messy facebook hash', () => {
-			throw new Error('not implemented yet')
+		it('should remove messy facebook hash', () => {
+			window.location.hash = window.location.hash + '_=_'
+			expect(/_=_/.test(window.location.hash)).to.be.true
+			preventBadFacebookHash()
+			expect(/_=_/.test(window.location.hash)).to.be.false
 		})
 	})
 
