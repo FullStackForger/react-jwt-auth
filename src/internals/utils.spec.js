@@ -82,11 +82,16 @@ describe('utils', () => {
 
 	describe('parseQueryString()', () => {
 		it('should parse query string', () => {
-			throw new Error('not implemented yet')
+			expect(parseQueryString('foo=bar').foo).to.equal('bar')
+			expect(parseQueryString('foo&bar')).to.deep.equal({ foo: true, bar: true })
+			expect(parseQueryString('foo=1&bar=2')).to.deep.equal({ foo: 1, bar: 2 })
 		})
 
-		it('should return object for invalid', () => {
-			throw new Error('not implemented yet')
+		it('should throws an error for invalid params', () => {
+			const errPattern = /Non-string values are not allowed./
+			expect(() => parseQueryString(0)).to.throw(Error, errPattern)
+			expect(() => parseQueryString(() => {})).to.throw(Error, errPattern)
+			expect(() => parseQueryString({ foo: 'bar'})).to.throw(Error, errPattern)
 		})
 	})
 

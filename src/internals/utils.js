@@ -44,17 +44,26 @@ export const isDefined = (value) => {
 }
 
 export const parseQueryString = (str) => {
-	let obj = {};
-	let key;
-	let value;
-	(str || '').split('&').forEach((keyValue) => {
-		if (keyValue) {
-			value = keyValue.split('=');
-			key = decodeURIComponent(value[0]);
-			obj[key] = isDefined(value[1]) ? decodeURIComponent(value[1]) : true;
+	let obj = {}, keyValue, key, val
+	if (typeof str !== 'string') {
+		throw new Error('Non-string values are not allowed.')
+	}
+	(str || '').split('&').forEach((keyValueStr) => {
+		if (keyValueStr) {
+			keyValue = keyValueStr.split('=')
+			key = decodeURIComponent(keyValue[0])
+			val = isDefined(keyValue[1]) ? decodeURIComponent(keyValue[1]) : true
+			if (val === 'true' || val === true) {
+				val = true
+			} else if (val === 'false' || val === false) {
+				val = false
+			} else if (!isNaN(val)) {
+				val = parseInt(val)
+			}
+			obj[key] = val
 		}
-	});
-	return obj;
+	})
+	return obj
 }
 
 // HotFix: Facebook redirects back with '_=_' hash which breaks the app
