@@ -1,3 +1,5 @@
+import enverse from 'enverse'
+
 export const checkResponseStatus = (response) => {
   if (response.status >= 200 && response.status < 300) {
     return response
@@ -58,7 +60,9 @@ export const parseQueryString = (str) => {
 // HotFix: Facebook redirects back with '_=_' hash which breaks the app
 export const preventBadFacebookHash = () => {
 	const fbHashAppendix = /_=_/
-	if (fbHashAppendix.test(window.location.hash)) {
-		window.location.hash = window.location.hash.replace(fbHashAppendix, '')
+	if (enverse.is.browser && enverse.has.window) {
+		if (fbHashAppendix.test(window.location.hash)) {
+			window.location.hash = window.location.hash.replace(fbHashAppendix, '')
+		}
 	}
 }
