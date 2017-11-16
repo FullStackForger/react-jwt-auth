@@ -8,7 +8,8 @@
 //  - https://github.com/sahat/satellizer/blob/master/src/storage.ts
 // ------------------------------------------------------------------
 
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import Storage from './storage'
 
 export default class StorageComponent extends React.Component {
