@@ -34,7 +34,7 @@ More in docs, [configuration](./docs/configuration.md) section.
 
 ## Social buttons
 
-Here is simplest example of social buttons in use inside of your component `reder()` method.
+Here is simplest example of social buttons in use inside of your component `render()` method.
 
 ```
 render () {
